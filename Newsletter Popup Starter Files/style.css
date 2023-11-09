@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --main-bg-color: #2355f2;
+  --main-text-color: #9c9c9c;
+  --secondary-text-color: #dcdcdc;
+  --main-heading-color: #ffffff;
+  --secondary-heading-color: #282828;
+  --input-bg-color: #f5f7fa;
+  --btm-sec-bg-color: #fff;
+}
+p {
+  text-align: center;
+  color: var(--main-text-color);
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./Assets/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter {
+  width: 35%;
+}
+
+.top {
+  background-color: var(--main-bg-color);
+  background-image: url(./Assets/Pattern.png);
+  padding: 50px 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.top > h1 {
+  color: var(--main-heading-color);
+  font-size: 35px;
+  text-align: center;
+}
+.bottom {
+  padding: 30px 10px;
+  background-color: var(--btm-sec-bg-color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.input-section {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+input {
+  width: 60%;
+  outline: none;
+  padding: 10px 15px;
+  border: 1px solid var(--secondary-text-color);
+  background-color: var(--input-bg-color);
+  font-size: 20px;
+  border-radius: 5px;
+}
+button {
+  width: 35%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-bg-color);
+  color: var(--main-heading-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+span {
+  padding-left: 5px;
+  width: 100%;
+  color: var(--secondary-text-color);
+}
+.user-review {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.user-info {
+  width: 100%;
+  padding: 30px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.user-name h3 {
+  font-size: 18px;
+  color: var(--secondary-heading-color);
+}
+.user-name p {
+  font-size: 20px;
+}
+
+@media (max-width: 990px) {
+  .newsletter {
+    width: 60%;
+  }
+  .top > h1 {
+    font-size: 30px;
+  }
+  input {
+    font-size: 16px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .bottom p {
+    font-size: 16px;
+  }
+  .input-section span {
+    font-size: 16px;
+  }
+  .user-name h3 {
+    font-size: 16px;
+  }
+  .user-name p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    background-image: none;
+  }
+  .newsletter {
+    height: 100%;
+    width: 100%;
+  }
+  .top {
+    border-radius: 0px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
